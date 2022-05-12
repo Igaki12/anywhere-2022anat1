@@ -38,7 +38,7 @@ function App() {
         どこでも試験対策
       </Heading>
       <Badge ml={3} mt="-3" borderRadius="full" px="2" colorScheme="teal">
-        第二解剖学・組織
+        第1解剖学
       </Badge>
       {settingDetail.isSet ? (
         <></>
