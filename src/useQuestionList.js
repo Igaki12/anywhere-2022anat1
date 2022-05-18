@@ -34,7 +34,8 @@ export const useQuestionList = () => {
           questionSentence: '鼻出血の好発部位は？',
           answerImg: [],
           answer: 'キーゼルバッハ部位',
-          commentary: '鼻腔に分布する前後篩骨動脈・蝶口蓋動脈・大口蓋動脈・上唇動脈の枝は鼻中隔前下部で吻合し、粘膜内に密な血管網を作っている。ここをキーゼルバッハ部位といい、粘膜の軽い損傷でも鼻出血を起こしやすい',
+          commentary:
+            '鼻腔に分布する前後篩骨動脈・蝶口蓋動脈・大口蓋動脈・上唇動脈の枝は鼻中隔前下部で吻合し、粘膜内に密な血管網を作っている。ここをキーゼルバッハ部位といい、粘膜の軽い損傷でも鼻出血を起こしやすい',
         },
         {
           detailInfo: '0413PM呼吸器クイズ',
@@ -42,7 +43,8 @@ export const useQuestionList = () => {
           questionSentence: 'Pleural effusionの溜まる部位を記しなさい',
           answerImg: [],
           answer: '胸膜腔',
-          commentary: '胸膜炎や腫瘍の際、胸膜腔に浸出液や膿が貯留し、胸水Pleural effusionや膿胸を引き起こすことがある。その場合、重力の影響で肋骨横隔洞にたまるので、注射器で抜く事ができる。',
+          commentary:
+            '胸膜炎や腫瘍の際、胸膜腔に浸出液や膿が貯留し、胸水Pleural effusionや膿胸を引き起こすことがある。その場合、重力の影響で肋骨横隔洞にたまるので、注射器で抜く事ができる。',
         },
         {
           detailInfo: '0413PM呼吸器クイズ',
@@ -55,7 +57,8 @@ export const useQuestionList = () => {
         {
           detailInfo: '',
           questionImg: [],
-          questionSentence: '思春期以前にムンプスウイルスが主として感染する臓器は？',
+          questionSentence:
+            '思春期以前にムンプスウイルスが主として感染する臓器は？',
           answerImg: [],
           answer: '耳下腺',
           commentary: '',
@@ -74,7 +77,26 @@ export const useQuestionList = () => {
           questionSentence: '大十二指腸乳頭に開口する管は？',
           answerImg: [],
           answer: '総胆管（と主膵管）',
-          commentary: '十二指腸下行部の前壁を開くと、その中頃で粘膜が縦に隆起している（十二指腸縦ヒダ）。その先端の膨隆を大十二指腸乳頭（ファーター乳頭）といい、合流した総胆管と主膵管の開口部である。',
+          commentary:
+            '十二指腸下行部の前壁を開くと、その中頃で粘膜が縦に隆起している（十二指腸縦ヒダ）。その先端の膨隆を大十二指腸乳頭（ファーター乳頭）といい、合流した総胆管と主膵管の開口部である。',
+        },
+        {
+          detailInfo: '5/18',
+          questionImg: [],
+          questionSentence:
+            ' Describe two methods to search for and visualize specific substances in cells or tissues by using the various specific molecular recognition mechanisms of the living body, such as antigen-antibody reactions.          ',
+          answerImg: [],
+          answer:
+            '直接法（一次抗体に直接標識物質を結合させる）と間接法（二次抗体に標識物質を結合させて可視化する）？',
+          commentary: '',
+        },
+        {
+          detailInfo: '5/18',
+          questionImg: [],
+          questionSentence: 'Show the three cytoskeletal components',
+          answerImg: [],
+          answer: 'アクチンフィラメント、中間径フィラメント、微小管',
+          commentary: '',
         },
         // {
         //   detailInfo: '5/11',
