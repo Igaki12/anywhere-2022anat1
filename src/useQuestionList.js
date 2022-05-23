@@ -98,8 +98,52 @@ export const useQuestionList = () => {
           answer: 'アクチンフィラメント、中間径フィラメント、微小管',
           commentary: '',
         },
+        {
+          detailInfo: '5/23',
+          questionImg: [],
+          questionSentence:
+            'Where is the typical site in which holocrine secretion occurs?',
+          // choices: ['', '', '', ''],
+          answerImg: [],
+          answer: '皮脂腺',
+          commentary:
+            '細胞全体が死滅して分泌物として放出。頭皮で発達しており、かならず毛穴が存在する。',
+        },
+        {
+          detailInfo: '5/23',
+          questionImg: [],
+          questionSentence: 'Describe the three different types of cartilages.',
+          // choices: ['', '', '', ''],
+          answerImg: [],
+          answer:
+            'ガラス軟骨Hyaline cartilage,弾性軟骨Elastic cartilage,線維軟骨Fibrous cartilage',
+          commentary:
+            'ガラス軟骨：軟骨膜をもち、線維成分に乏しい。最も人体で多い。　弾性軟骨：軟骨膜をもち、無数の弾性繊維が走る。耳介など　線維軟骨：軟骨膜をもたず、Ⅰ型コラーゲンが豊富。椎間板など',
+        },
+        {
+          detailInfo: '5/23',
+          questionImg: [],
+          questionSentence:
+            'What kind of cells are involved in the bone remodeling?',
+          // choices: ['', '', '', ''],
+          answerImg: [],
+          answer: '骨芽細胞Osteoblast,破骨細胞Osteoclast,骨細胞Osteocyte',
+          commentary:
+            '骨芽細胞：間質系由来。骨形成あるいは骨化に必須。上皮細胞のように一列にならび、一部は新生された基質に埋め込まれ骨細胞に分化する。　骨細胞：骨小腔に存在する。毛細血管とはハヴァース管・骨細管を通じて物質交換が行われる。　破骨細胞：造血幹細胞由来。骨組織の吸収とリモデリングを行う非常に大型の細胞（5～50個の核を持つ！）ハウシップ窩や波状縁が形成される。',
+        },
+        {
+          detailInfo: '5/23',
+          questionImg: [],
+          questionSentence:
+            'What kind of skeletal muscle is required for aerobic exercise?',
+          // choices: ['', '', '', ''],
+          answerImg: [],
+          answer: '赤筋Red muscle',
+          commentary:
+            '有酸素運動Aerobic exerciseに必要な抗重力筋に多く見られる。',
+        },
         // {
-        //   detailInfo: '5/11',
+        //   detailInfo: '5/23',
         //   questionImg: [],
         //   questionSentence: '',
         //   choices: ['', '', '', ''],

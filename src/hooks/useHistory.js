@@ -162,7 +162,9 @@ export const useHistory = () => {
       newHistory.remainingQuestionList.push(
         newHistory.askedQuestionList[index + 1],
       )
-      newHistory.askedQuestionList.splice(index + 1, 1)
+      // 復習ボタンを押すとResultBarがおかしくなるバグがあるため、修正
+      // newHistory.askedQuestionList.splice(index + 1, 1)
+      newHistory.askedQuestionList[index + 1].reviewed = true
 
       setHistory([...history, newHistory])
       console.log(history)

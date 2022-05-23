@@ -50,7 +50,7 @@ export const QuestionsLog = ({
         {/* {questionList.map((group) =>
           group.groupContents.map((question, index) => ( */}
         {history[history.length - 1].askedQuestionList
-          .filter((question) => question.id > -1)
+          .filter((question) => question.id > -1 && question.reviewed !== true)
           .map((question, index) => (
             <>
               <Box
