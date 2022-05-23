@@ -115,10 +115,9 @@ export const useQuestionList = () => {
           questionSentence: 'Describe the three different types of cartilages.',
           // choices: ['', '', '', ''],
           answerImg: [],
-          answer:
-            'ガラス軟骨Hyaline cartilage,弾性軟骨Elastic cartilage,線維軟骨Fibrous cartilage',
+          answer: 'ガラス軟骨,弾性軟骨,線維軟骨',
           commentary:
-            'ガラス軟骨：軟骨膜をもち、線維成分に乏しい。最も人体で多い。　弾性軟骨：軟骨膜をもち、無数の弾性繊維が走る。耳介など　線維軟骨：軟骨膜をもたず、Ⅰ型コラーゲンが豊富。椎間板など',
+            'ガラス軟骨Hyaline cartilage：軟骨膜をもち、線維成分に乏しい。最も人体で多い。　弾性軟骨Elastic cartilage：軟骨膜をもち、無数の弾性繊維が走る。耳介など　線維軟骨Fibrous cartilage：軟骨膜をもたず、Ⅰ型コラーゲンが豊富。椎間板など',
         },
         {
           detailInfo: '5/23',
@@ -127,9 +126,9 @@ export const useQuestionList = () => {
             'What kind of cells are involved in the bone remodeling?',
           // choices: ['', '', '', ''],
           answerImg: [],
-          answer: '骨芽細胞Osteoblast,破骨細胞Osteoclast,骨細胞Osteocyte',
+          answer: '骨芽細胞,破骨細胞,骨細胞',
           commentary:
-            '骨芽細胞：間質系由来。骨形成あるいは骨化に必須。上皮細胞のように一列にならび、一部は新生された基質に埋め込まれ骨細胞に分化する。　骨細胞：骨小腔に存在する。毛細血管とはハヴァース管・骨細管を通じて物質交換が行われる。　破骨細胞：造血幹細胞由来。骨組織の吸収とリモデリングを行う非常に大型の細胞（5～50個の核を持つ！）ハウシップ窩や波状縁が形成される。',
+            '骨芽細胞Osteoblast：間質系由来。骨形成あるいは骨化に必須。上皮細胞のように一列にならび、一部は新生された基質に埋め込まれ骨細胞に分化する。　骨細胞Osteocyte：骨小腔に存在する。毛細血管とはハヴァース管・骨細管を通じて物質交換が行われる。　破骨細胞Osteoclast：造血幹細胞由来。骨組織の吸収とリモデリングを行う非常に大型の細胞（5～50個の核を持つ！）ハウシップ窩や波状縁が形成される。',
         },
         {
           detailInfo: '5/23',
@@ -138,9 +137,9 @@ export const useQuestionList = () => {
             'What kind of skeletal muscle is required for aerobic exercise?',
           // choices: ['', '', '', ''],
           answerImg: [],
-          answer: '赤筋Red muscle',
+          answer: '赤筋',
           commentary:
-            '有酸素運動Aerobic exerciseに必要な抗重力筋に多く見られる。',
+            '赤筋Red muscleは有酸素運動Aerobic exerciseに必要な抗重力筋に多く見られる。',
         },
         // {
         //   detailInfo: '5/23',
