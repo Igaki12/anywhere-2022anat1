@@ -149,35 +149,73 @@ export const useQuestionList = () => {
           // choices: ['', '', '', ''],
           answerImg: [],
           answer: '副腎',
-          commentary: '',
+          commentary:
+            'アルドステロンは副腎皮質球状帯から、コルチゾール（糖質コルチコイド）は副腎皮質束状帯から。',
         },
         // {
-        //   detailInfo: '5/23',
+        //   detailInfo: '反転授業',
         //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['', '', '', ''],
+        //   questionSentence:
+        //     'コルチゾール過剰により中心性肥満・満月様顔貌・水牛様肩・四肢筋肉の減少・高血糖が生じた。どのような機序で過剰コルチゾールはこれらの症状を生じさせたのか説明しなさい。',
+        //   // choices: ['', '', '', ''],
         //   answerImg: [],
         //   answer: '',
         //   commentary: '',
         // },
         // {
-        //   detailInfo: '5/23',
+        //   detailInfo: '反転授業',
         //   questionImg: [],
-        //   questionSentence: '',
+        //   questionSentence:
+        //     'なぜACTH濃度は低下していたのか。高コルチゾール血症を生じた原因のうち、このACTH低下をもとに除外できるものはあるかについて考察しなさい。',
         //   choices: ['', '', '', ''],
         //   answerImg: [],
         //   answer: '',
         //   commentary: '',
         // },
-        // {
-        //   detailInfo: '5/23',
-        //   questionImg: [],
-        //   questionSentence: '',
-        //   choices: ['', '', '', ''],
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
+        {
+          detailInfo: '5/24',
+          questionImg: [],
+          questionSentence:
+            'Describe the principle components of the neural cell.',
+          // choices: ['', '', '', ''],
+          answerImg: [],
+          answer: '軸索、細胞体、樹状突起',
+          commentary:
+            '軸索Axon:2本以上あることはない。全か無かのデジタル信号を伝える。　細胞体Soma:核とその周囲の細胞質。　樹状突起dendrites:通常複数の突起からなる。入力を受け取る部分。',
+        },
+        {
+          detailInfo: '5/24',
+          questionImg: [],
+          questionSentence:
+            'Describe the features of presynaptic element of Gray type 1 synapse.',
+          // choices: ['', '', '', ''],
+          answerImg: [],
+          answer: '著名なアクティブゾーンを持ち、球形。',
+          commentary:
+            'GrayⅠ型シナプス：非対称型シナプスともいう。球形のシナプス小胞（球形小胞、S型小胞spherical vesicle）をもつ。著名なアクティブゾーンをもち、シナプス後膜肥厚が顕著で、シナプス間隙が広い（30nm）。興奮性シナプスとも呼ばれる。',
+        },
+        {
+          detailInfo: '5/24',
+          questionImg: [],
+          questionSentence:
+            'What kind of motor molecule is involved for the retrograde transport in the neural fibers?',
+          // choices: ['', '', '', ''],
+          answerImg: [],
+          answer: 'ダイニン',
+          commentary:
+            '逆行性輸送(Retrograde transport):+端→-端　順行性輸送(Anterograde transport):-端→+端はキネシンKinesinが担当する。',
+        },
+        {
+          detailInfo: '5/24',
+          questionImg: [],
+          questionSentence:
+            'What happens when erythrocytes are placed in a hypotonic solution?',
+          // choices: ['', '', '', ''],
+          answerImg: [],
+          answer: '（赤血球が）縮む',
+          commentary:
+            '赤血球の膜は半透膜（水のみ通す）で、浸透圧の影響を受けやすい。',
+        },
         // {
         //   detailInfo: '5/23',
         //   questionImg: [],
