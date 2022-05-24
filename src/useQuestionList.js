@@ -172,6 +172,36 @@ export const useQuestionList = () => {
         //   answer: '',
         //   commentary: '',
         // },
+        // {
+        //   detailInfo: '反転授業',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '健常人ならば、低容量デキサメタゾン試験においてどのような反応をしめすか示しなさい。本症例の反応は正常か？もし正常でないならば、それはなぜかについて説明しなさい。',
+        //   choices: ['', '', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '反転授業',
+        //   questionImg: [],
+        //   questionSentence:
+        //     'なぜ血清Kイオンが低下したかについて考察しなさい。',
+        //   choices: ['', '', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+        // {
+        //   detailInfo: '反転授業',
+        //   questionImg: [],
+        //   questionSentence:
+        //     '女性の場合では、クッシング症候群においては体毛の増加、座瘡（にきび、acne）、月経不順などを伴う男性化masculinizationを生じる。なぜクッシング症候群では女性にこのような症状が生じるのかについて考察しなさい。',
+        //   choices: ['', '', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
         {
           detailInfo: '5/24',
           questionImg: [],
@@ -203,7 +233,7 @@ export const useQuestionList = () => {
           answerImg: [],
           answer: 'ダイニン',
           commentary:
-            '逆行性輸送(Retrograde transport):+端→-端　順行性輸送(Anterograde transport):-端→+端はキネシンKinesinが担当する。',
+            '逆行性輸送(Retrograde transport):+端→-端。　順行性輸送(Anterograde transport):-端→+端はキネシンKinesinが担当する。',
         },
         {
           detailInfo: '5/24',
