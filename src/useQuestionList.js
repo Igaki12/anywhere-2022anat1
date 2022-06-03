@@ -258,7 +258,7 @@ export const useQuestionList = () => {
       ],
     },
     {
-      groupTag: '2019総論',
+      groupTag: '2019総論課題',
       groupContents: [
         {
           detailInfo: '1',
