@@ -258,6 +258,55 @@ export const useQuestionList = () => {
       ],
     },
     {
+      groupTag: '2018総論',
+      groupContents: [
+        {
+          detailInfo: '1',
+          questionImg: [],
+          questionSentence:
+            ' Exosome について、形態、生体内における存在部位、機能について説明しなさい(18 点)',
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '2.',
+          questionImg: [],
+          questionSentence:
+            ' white adipocyte、brown adipocyte の違いについて、形態、生体内での存在部位、機能について説明しなさい(18 点)',
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '3.',
+          questionImg: [],
+          questionSentence:
+            ' osteoporosis についてosteoblast、osteoclast、RANKL、estrogen、cytokine、sclerostin を必ず用いて説明せよ(18 点)４. Skeletal muscle の構造について、I band、A band、sarcomere、transversetubule system、sarcoplasmic reticulum という用語を必ず用いて説明せよ(18点)',
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '5.',
+          questionImg: [],
+          questionSentence: ' 化学シナプスの構造について説明せよ(１８点)',
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '6.',
+          questionImg: [],
+          questionSentence:
+            ' peripheral blood の内 white blood cell/leukocyte を５つ答えよ(10 点)',
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+      ],
+    },
+    {
       groupTag: '2019総論課題',
       groupContents: [
         {
