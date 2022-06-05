@@ -995,7 +995,8 @@ export const useQuestionList = () => {
             ' synaptic cleft は(　)の細胞膜シートにより遮蔽されており、(　)が存在し、神経伝達物質を特異的に汲み出す役割をしている.',
           answerImg: [],
           answer: 'アストロサイト、輸送体',
-          commentary: 'シナプス間隙synaptic cleftはastrocyteの細胞膜シートに完全に遮断され、伝達物質放出後は輸送体transporterによってシナプス間隙に放出された伝達物質を再取り込みすることで神経伝達を速やかに終息させる。',
+          commentary:
+            'シナプス間隙synaptic cleftはastrocyteの細胞膜シートに完全に遮断され、伝達物質放出後は輸送体transporterによってシナプス間隙に放出された伝達物質を再取り込みすることで神経伝達を速やかに終息させる。',
         },
         {
           detailInfo: '67.',
@@ -1003,8 +1004,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' Gray I 型シナプスは形態学的には(　)性シナプスと言われ、機能的には(　)性シナプスである.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '非対称、興奮',
+          commentary:
+            '著明なアクティブゾーンをもち、シナプス後膜肥厚が顕著で、シナプス間隙が広い。',
         },
         {
           detailInfo: '68.',
@@ -1012,16 +1014,17 @@ export const useQuestionList = () => {
           questionSentence:
             ' シナプス後膜には電子密度の高い構造があり、(　)とよばれる.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'シナプス後膜肥厚',
+          commentary:
+            '神経伝達物質の受容体や、受容体に共役する酵素や蛋白物質が存在する。',
         },
         {
           detailInfo: '69.',
           questionImg: [],
           questionSentence:
-            ' シナプス後部の代謝型レセプターとして代表的なものは、tyrosine kinasereceptor と(　)がある.',
+            ' シナプス後部の代謝型レセプターとして代表的なものは、tyrosine kinase receptor と(　)がある.',
           answerImg: [],
-          answer: '',
+          answer: 'G-タンパク共役型レセプター',
           commentary: '',
         },
         {
@@ -1030,8 +1033,8 @@ export const useQuestionList = () => {
           questionSentence:
             ' axon の myelin sheath が途切れる部分を Node of Ranvier というが、ここには(　)型 Na チャネルが発現している.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '電位依存',
+          commentary: 'ランビエ絞輪:Node of Ranvier。跳躍伝導',
         },
         {
           detailInfo: '71.',
@@ -1039,8 +1042,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' Retrograde transport に重要な motor protein は(　)である.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'ダイニン',
+          commentary:
+            '逆行性輸送Retrograde transportはダイニンDynein,順行性輸送Anterograde transportはキネシンKinesinが担当する',
         },
         {
           detailInfo: '72.',
@@ -1048,8 +1052,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' Blood brain barrier においては brain capillary の(　)の間隔が極めて狭く、周囲には(　)の突起が取り巻いている.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '内皮細胞、アストロサイト',
+          commentary:
+            'astrocyteの毛細血管壁に小足を出して神経細胞と血管の間に介在し、血液中の物質が神経組織内に移行するのを選択的に制限している。',
         },
         {
           detailInfo: '73.',
@@ -1057,7 +1062,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' Dorsal root ganglia の(　)cell は myelin 形成や neuron を栄養する機能を持っている.',
           answerImg: [],
-          answer: '',
+          answer: 'マントル細胞',
           commentary: '',
         },
         {
@@ -1066,7 +1071,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' 動物がある特定の場所を通過する時のみ発火する海馬の錐体細胞を(　)といい、グリッド細胞は(　)に存在するニューロンであり、空間を正三角形で埋め尽くしたとき、その全ての頂点で活動するようなニューロンである.',
           answerImg: [],
-          answer: '',
+          answer: '場所細胞、嗅内皮質',
           commentary: '',
         },
         {
@@ -1075,7 +1080,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' GCaMP は GFP とカルモジユリンとがミオシン軽鎖で結合したタンパク質であり、神経細胞内の(　)の変化を可視化して検出することができる.',
           answerImg: [],
-          answer: '',
+          answer: 'カルシウム',
           commentary: '',
         },
         {
@@ -1084,7 +1089,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' LTP が誘発されると樹状突起の(　)の大きさが大きくなるが、これは(　)の重合状態が変化することによると考えられている.',
           answerImg: [],
-          answer: '',
+          answer: 'spine,アクチン',
           commentary: '',
         },
         {
@@ -1093,8 +1098,8 @@ export const useQuestionList = () => {
           questionSentence:
             ' 成人男性の erythrocyte は約(　)個/ l であり、hypotonic solution に入れると(　)する.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '500万、溶血/破裂',
+          commentary: '赤血球は単純な膜構造で、浸透圧の影響を受けやすい',
         },
         {
           detailInfo: '78.',
@@ -1102,7 +1107,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' Leucocyte の中で最も割合が多いのは(　)であり、染色質に富んだ(　)核を有し、主に感染防御の役割をする.',
           answerImg: [],
-          answer: '',
+          answer: '好中球、分葉',
           commentary: '',
         },
         {
@@ -1110,7 +1115,7 @@ export const useQuestionList = () => {
           questionImg: [],
           questionSentence: ' 寄生虫感染などで増加する leucocyte は(　)である.',
           answerImg: [],
-          answer: '',
+          answer: '好酸球',
           commentary: '',
         },
         {
@@ -1119,7 +1124,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' 血液凝固に必要な fibrin は fibrinogen に(　)が作用して生成される.',
           answerImg: [],
-          answer: '',
+          answer: 'トロンビン',
           commentary: '',
         },
         {
@@ -1128,7 +1133,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' von Willebrand factor は血管損傷部位の初期血小板粘着、血小板凝集、凝固第(　)因子の安定化作用をもつ高分子の血漿糖タンパク質である.',
           answerImg: [],
-          answer: '',
+          answer: 'VⅢ',
           commentary: '',
         },
         {
@@ -1137,8 +1142,8 @@ export const useQuestionList = () => {
           questionSentence:
             ' 成人で赤色骨髄を多く含むのは sternum と(　)である.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '腸骨',
+          commentary: 'sternum:胸骨',
         },
       ],
     },
