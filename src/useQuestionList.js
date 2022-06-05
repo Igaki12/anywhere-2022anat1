@@ -786,8 +786,8 @@ export const useQuestionList = () => {
           questionSentence:
             ' 閉経後の女性は(　)欠乏により osteoporosis になりやすい',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'エストロゲン',
+          commentary: '骨粗鬆症:osteoporosis',
         },
         {
           detailInfo: '45.',
@@ -795,7 +795,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' 骨に対する衝撃や負荷が低下することにより骨細胞が(　)を大量に産生して骨芽細胞の数を減少させることによっても osteoporosis が引き起こされる.',
           answerImg: [],
-          answer: '',
+          answer: 'スクレロスチン',
           commentary: '',
         },
         {
@@ -804,16 +804,18 @@ export const useQuestionList = () => {
           questionSentence:
             ' 骨格筋の筋原線維には I 帯と A 帯が規則正しく繰り返し存在し、光学顕微鏡では(　)として観察される.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '横紋',
+          commentary:
+            'A帯はミオシンフィラメントとアクチンフィラメントの両方が存在するため暗く、I帯はアクチンフィラメントのみ存在するため明るく見える。',
         },
         {
           detailInfo: '47.',
           questionImg: [],
           questionSentence: ' 骨格筋の収縮の最小単位を(　)という.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'サルコメア',
+          commentary:
+            '筋節Sarcomereが筋収縮の最小単位で、Z線（アクチンフィラメントの接着面）から次のZ線までの部位。',
         },
         {
           detailInfo: '48.',
@@ -821,8 +823,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' 骨格筋には筋細胞膜が落ち込んでできた管状の(　)系が存在し、細胞表面の興奮を細胞内に伝える.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'T細管',
+          commentary:
+            'T細管系Tranverse tubuleはA帯とI帯の境界にそって筋原線維を横切るように走る。表面の興奮を内部に伝える。',
         },
         {
           detailInfo: '49.',
@@ -830,8 +833,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' 骨格筋の収縮は actin と(　)とが相互作用することによって引き起こされる.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'ミオシン',
+          commentary:
+            'アクチンactinとミオシンmyosinに、トロポミオシン・トロポニンが関係する機構',
         },
         {
           detailInfo: '50.',
@@ -839,8 +843,8 @@ export const useQuestionList = () => {
           questionSentence:
             ' 赤筋はジョギング、水泳など持久力の必要な(　)運動に主として関与し、(　)筋は瞬発力を要する筋肉に多くみられる.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '有酸素',
+          commentary: '長時間姿勢を維持する筋（抗重力筋）に多くみられる',
         },
         {
           detailInfo: '51.',
@@ -848,8 +852,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' Neuromuscular junction における伝達物質は(　)である.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'アセチルコリン',
+          commentary:
+            '神経筋接合部NMJは運動神経の軸索終末と運動終板の間でアセチルコリン等を受け渡ししている。',
         },
         {
           detailInfo: '52.',
@@ -857,7 +862,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' (　)は不可逆的にアセチルコリンエステラーゼを阻害することにより、neuromuscular junction での脱分極を持続させ、筋力を低下させる.',
           answerImg: [],
-          answer: '',
+          answer: 'サリン',
           commentary: '',
         },
         {
@@ -866,7 +871,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' 骨格筋には固有受容器として(　)があり、第一終末の太い知覚線維は脊髄に至り同一の筋束を支配する(　)とシナプスを作り、反射弓を形成する.',
           answerImg: [],
-          answer: '',
+          answer: '筋紡錘、α-motor-neuron',
           commentary: '',
         },
         {
@@ -875,8 +880,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' 心筋は骨格筋と同様な横紋を呈しており、隣り合う心筋同士が接する部位には(　)という構造が見られる.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '介在板/光輝線',
+          commentary:
+            '心筋Cardiac muscleは骨格筋同様T細管や横紋を持つが、核は1～2個。',
         },
         {
           detailInfo: '55.',
@@ -884,7 +890,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' 心筋には gap junction が発達しており、主に(　)というタンパク質から構成される.',
           answerImg: [],
-          answer: '',
+          answer: 'コネキシン27',
           commentary: '',
         },
         {
@@ -893,8 +899,8 @@ export const useQuestionList = () => {
           questionSentence:
             ' 平滑筋は(　)核細胞であり、骨格筋の troponin C に相当するのは(　)というたんぱく質である.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '単、カルモジュリン',
+          commentary: 'カルモジュリン:Calcium-binding-protein',
         },
         {
           detailInfo: '57.',
@@ -902,7 +908,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' 平滑筋の筋小胞体には IP3 受容体や(　)受容体が発現している.',
           answerImg: [],
-          answer: '',
+          answer: 'リアノジン',
           commentary: '',
         },
         {
@@ -911,7 +917,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' 近年ランニングなどで筋肉を鍛えることにより、筋肉から放出される(　)という物質により、海馬の神経細胞新生が増加し、記憶力が高まる可能性が示された.',
           answerImg: [],
-          answer: '',
+          answer: 'カテプシンB',
           commentary: '',
         },
         {
@@ -920,8 +926,8 @@ export const useQuestionList = () => {
           questionSentence:
             ' Central nervous system は brain と(　)とからなる.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '脊髄',
+          commentary: '脳と脊髄以外は含まれない',
         },
         {
           detailInfo: '60.',
@@ -929,8 +935,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' Peripheral nervous system の(　)neuron は 12 対、spinal neuron は(　)対存在する.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '脳神経、31',
+          commentary:
+            '脳神経：cranial nerves。spinal nerves(31) = C8 + T12 + L5 + S5 + Co1',
         },
         {
           detailInfo: '61.',
@@ -938,8 +945,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' Cerebral spinal fluid は側脳室、第３脳室、(　)、第４脳室を経て(　)へ注ぎ込む.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '中脳水道、脊髄',
+          commentary:
+            '側脳室→第3脳室は室間孔（モンロー孔）、第4脳室→脊髄は正中口（マジャンディー孔）と外側口（ルシャカ孔）が通じている',
         },
         {
           detailInfo: '62.',
@@ -947,8 +955,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' Dorsal root ganglion の neuron は形態学的には(　)neuron である.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '偽単極性',
+          commentary:
+            '後根神経節を構成する神経細胞は感覚ニューロンで、偽単極性',
         },
         {
           detailInfo: '63.',
@@ -956,8 +965,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' 神経細胞を Nissl 染色した場合、Nissl 物質が存在しない部位を(　)と言い、ここから(　)が発生する.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '軸索小丘、活動電位',
+          commentary:
+            '軸索小丘Axon hillock。軸索内ではタンパク質合成が行われないため粗面小胞体が少なく、ニッスル染色で染まらない。',
         },
         {
           detailInfo: '64.',
@@ -965,7 +975,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' Golgi 染色はニクロム酸カリウムと(　)を用いた染色法である.',
           answerImg: [],
-          answer: '',
+          answer: '硝酸銀',
           commentary: '',
         },
         {
@@ -974,8 +984,9 @@ export const useQuestionList = () => {
           questionSentence:
             'シナプス前部においてシナプス小胞は(　)に融合し、神経伝達物質がシナプス間隙に放出される.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '活性帯',
+          commentary:
+            '活性帯active zone。電位依存性Caイオンチャネルが列をなして存在し、細胞内にシナプス小胞が集積している ',
         },
         {
           detailInfo: '66.',
@@ -983,8 +994,8 @@ export const useQuestionList = () => {
           questionSentence:
             ' synaptic cleft は(　)の細胞膜シートにより遮蔽されており、(　)が存在し、神経伝達物質を特異的に汲み出す役割をしている.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'アストロサイト、輸送体',
+          commentary: 'シナプス間隙synaptic cleftはastrocyteの細胞膜シートに完全に遮断され、伝達物質放出後は輸送体transporterによってシナプス間隙に放出された伝達物質を再取り込みすることで神経伝達を速やかに終息させる。',
         },
         {
           detailInfo: '67.',
