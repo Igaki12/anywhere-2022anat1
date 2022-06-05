@@ -6,7 +6,7 @@ export const useSetting = () => {
     isSet: false,
     mode: 'training',
     questionOrder: 'ascend',
-    questionRange: ['出席確認',],
+    questionRange: ['出席確認など', '2020本', '2018本'],
     wordFilter: [],
   })
   const showSettingDetail = () => {
@@ -54,6 +54,19 @@ export const useSetting = () => {
     console.log('deleteWOrdFilter:', index)
     setSettingDetail(newSettingDetail)
   }
+  // const addQuestionNum = (num) => {
+  //   if (num === '') {
+  //     num = 1
+  //   }
+  //   let newSettingDetail = settingDetail
+  //   newSettingDetail.questionNum += num
+  //   setSettingDetail(newSettingDetail)
+  //   console.log('addQuestionNum:' + num)
+  // }
+  const updateAllSettings = (newSettingDetail) => {
+    setSettingDetail(newSettingDetail)
+    console.log(newSettingDetail)
+  }
   return {
     settingDetail,
     showSettingDetail,
@@ -63,5 +76,6 @@ export const useSetting = () => {
     makeSetting,
     addWordFilter,
     deleteWordFilter,
+    updateAllSettings,
   }
 }

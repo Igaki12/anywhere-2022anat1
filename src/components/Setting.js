@@ -12,11 +12,13 @@ import {
   Text,
   Alert,
   AlertIcon,
+  useToast,
 } from '@chakra-ui/react'
 import { CheckCircleIcon, QuestionIcon, WarningIcon } from '@chakra-ui/icons'
 import '../App.css'
 import { SearchWord } from './SearchWord'
 import { useState } from 'react'
+import jsCookie from 'js-cookie'
 export const Setting = ({
   questionList,
   showSettingDetail,
@@ -28,9 +30,12 @@ export const Setting = ({
   makeSetting,
   addWordFilter,
   deleteWordFilter,
+  updateAllSettings,
+  loadHistory,
 }) => {
   const settingDetail = showSettingDetail()
   const [checkMsg, setCheckMsg] = useState()
+  const toast = useToast()
   const checkSelection = () => {
     let selectedQuestionList = []
     questionList.forEach((group) => {
@@ -79,6 +84,46 @@ export const Setting = ({
       console.log('1回だけ表示される')
     }
   }
+  // ここからCookieを使った設定の引継ぎ
+  let savedSettingDetail = showSettingDetail()
+  let getCookiesFlag = 0
+  // let isLoaded
+  jsCookie.set('locale', 'ja-JP')
+  if (jsCookie.get('questionOrder')) {
+    savedSettingDetail.questionOrder = jsCookie.get('questionOrder')
+    getCookiesFlag = 1
+  }
+
+  if (jsCookie.get('questionRange')) {
+    savedSettingDetail.questionRange = jsCookie.get('questionRange').split(',')
+    getCookiesFlag = 1
+  }
+  if (jsCookie.get('wordFilter')) {
+    savedSettingDetail.wordFilter = jsCookie.get('wordFilter').split(',')
+    getCookiesFlag = 1
+  }
+  // if (isLoaded !== true && getCookiesFlag === 1) {
+  //   console.log('savedSettingDetail:' + isLoaded + getCookiesFlag)
+  //   toast({
+  //     title: '前回の設定を引継ぎました',
+  //     position: 'top',
+  //     status: 'info',
+  //     isClosable: true,
+  //   })
+  //   // updateAllSettings(savedSettingDetail)
+  //   isLoaded = true
+  // }
+  const saveSetting = (settingDetail) => {
+    jsCookie.set('questionOrder', settingDetail.questionOrder)
+    jsCookie.set('questionRange', settingDetail.questionRange)
+    jsCookie.set('wordFilter', settingDetail.wordFilter)
+    console.log(jsCookie.get())
+  }
+  let remainingNum = 0
+  if (jsCookie.get('history')) {
+    remainingNum = jsCookie.get('history').split(',').length - 1
+    console.log(jsCookie.get('history').split(','))
+  }
   return (
     <>
       <List spacing={3} p={3} bgColor="green.50" fontSize={'sm'}>
@@ -88,16 +133,15 @@ export const Setting = ({
         </ListItem>
         <ListItem transitionDelay="100s" className="Headline1">
           <ListIcon as={CheckCircleIcon} color="green.500" />
-          練習モードで解説をインプットし,テストモードでアウトプットを実践しよう
+          出題パターンや出題範囲・キーワードを自由に設定して、自分好みの問題集を作ろう
         </ListItem>
         <ListItem transitionDelay="5s" className="Headline1">
           <ListIcon as={CheckCircleIcon} color="green.500" />
-          出題パターンや細かい出題範囲設定にも対応済み。
+          途中でアプリを消してしまっても、続きから再開できるので安心
         </ListItem>
-        {/* You can also use custom icons from react-icons */}
         <ListItem transitionDelay="6s" className="Headline1">
           <ListIcon as={WarningIcon} color="green.500" />
-          問題・解答解説の正誤に関しては責任を持ちません
+          問題は一部機械作成されているので誤字があり、解答解説は間違っている可能性があります。
         </ListItem>
         <ListItem transitionDelay="6s" className="Headline1">
           <ListIcon as={QuestionIcon} color="green.500" />
@@ -105,50 +149,79 @@ export const Setting = ({
         </ListItem>
       </List>
 
+      <Stack direction="row" spacing={4} align="center" m="2" ml={6}>
+        {checkMsg === '条件を満たした質問が存在しません' ? (
+          <Button colorScheme="teal" variant="outline" isDisabled>
+            はじめから
+          </Button>
+        ) : (
+          <Button
+            colorScheme="teal"
+            variant="outline"
+            onClick={() => {
+              updateQuestionMode('training')
+              selectQuestionList(questionList, settingDetail)
+              nextQuestion(settingDetail)
+              makeSetting()
+              saveSetting(settingDetail)
+            }}
+          >
+            はじめから
+          </Button>
+        )}
+
+        {jsCookie.get('history') &&
+        jsCookie.get('history').split(',').length > 1 ? (
+          <Button
+            bgGradient="linear(to bottom right, green.300, green.800)"
+            color={'white'}
+            variant="solid"
+            onClick={() => {
+              // updateQuestionMode('practice')
+              loadHistory(jsCookie.get('history'), questionList)
+              updateAllSettings({
+                isSet: false,
+                mode: 'training',
+                questionOrder: jsCookie.get('questionOrder'),
+                questionRange: jsCookie.get('questionRange').split(','),
+                wordFilter: jsCookie.get('wordFilter').split(','),
+              })
+              nextQuestion(settingDetail)
+              makeSetting()
+              saveSetting(settingDetail)
+            }}
+          >
+            続きから(あと{remainingNum}問)
+          </Button>
+        ) : (
+          <Button
+            bgGradient="linear(to bottom right, green.300, green.800)"
+            color={'white'}
+            variant="solid"
+            onClick={() => updateQuestionMode('practice')}
+            isDisabled
+          >
+            続きから再開
+          </Button>
+        )}
+
+        {/* <Button
+          bgGradient="linear(to bottom right, green.300, green.800)"
+          color={'white'}
+          variant="solid"
+          onClick={() => updateQuestionMode('practice')}
+          isDisabled
+        >
+          続きから再開
+        </Button> */}
+      </Stack>
       {checkMsg === '条件を満たした質問が存在しません' ? (
-        <>
-          <Stack direction="row" spacing={4} align="center" m="2" ml={6}>
-            <Button colorScheme="teal" variant="outline" isDisabled>
-              練習モード
-            </Button>
-            <Button
-              bgGradient="linear(to bottom right, green.300, green.800)"
-              color={'white'}
-              variant="solid"
-              isDisabled
-            >
-              テストモード
-            </Button>
-          </Stack>
-          <Alert status="error" fontWeight={'semibold'}>
-            <AlertIcon />
-            {checkMsg}
-          </Alert>
-        </>
+        <Alert status="error" fontWeight={'semibold'}>
+          <AlertIcon />
+          {checkMsg}
+        </Alert>
       ) : (
         <>
-          <Stack direction="row" spacing={4} align="center" m="2" ml={6}>
-            <Button
-              colorScheme="teal"
-              variant="outline"
-              onClick={() => {
-                updateQuestionMode('training')
-                selectQuestionList(questionList, settingDetail)
-                nextQuestion(settingDetail)
-                makeSetting()
-              }}
-            >
-              練習モード
-            </Button>
-            <Button
-              bgGradient="linear(to bottom right, green.300, green.800)"
-              color={'white'}
-              variant="solid"
-              onClick={() => updateQuestionMode('practice')}
-            >
-              テストモード
-            </Button>
-          </Stack>
           {checkMsg ? (
             <Alert status="success">
               <AlertIcon />
@@ -159,25 +232,35 @@ export const Setting = ({
           )}
         </>
       )}
+
       <RadioGroup defaultValue={settingDetail.questionOrder}>
         <Stack spacing={5} direction="row" p={2}>
           <Radio
             colorScheme="red"
             value="random"
-            onChange={() => updateQuestionOrder('random')}
+            onChange={() => {
+              updateQuestionOrder('random')
+              saveSetting(settingDetail)
+            }}
           >
             ランダム出題
           </Radio>
           <Radio
             colorScheme="green"
             value="ascend"
-            onChange={() => updateQuestionOrder('ascend')}
+            onChange={() => {
+              updateQuestionOrder('ascend')
+              saveSetting(settingDetail)
+            }}
           >
             順番通り出題
           </Radio>
         </Stack>
       </RadioGroup>
-      <CheckboxGroup colorScheme="green" defaultValue={['出席確認']}>
+      <CheckboxGroup
+        colorScheme="green"
+        defaultValue={settingDetail.questionRange}
+      >
         <Stack
           spacing={[2, 4]}
           direction={['column', 'row']}
@@ -192,6 +275,7 @@ export const Setting = ({
               onChange={() => {
                 toggleQuestionRange(group.groupTag)
                 checkSelection()
+                saveSetting(settingDetail)
               }}
             >
               {group.groupTag}(
@@ -206,6 +290,7 @@ export const Setting = ({
         deleteWordFilter={deleteWordFilter}
         questionList={questionList}
         checkSelection={checkSelection}
+        saveSetting={saveSetting}
       />
       <Divider orientation="horizontal" />
       <Text fontSize="xs" textColor={'blackAlpha.500'} ml="4">

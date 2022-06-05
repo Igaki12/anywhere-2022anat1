@@ -258,6 +258,85 @@ export const useQuestionList = () => {
       ],
     },
     {
+      groupTag: '2017総論',
+      groupContents: [
+        {
+          detailInfo: '1',
+          questionImg: [],
+          questionSentence: 'Autophagy の機構と生理学的機能を説明せよ。(　)',
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '２．',
+          questionImg: [],
+          questionSentence: 'DNA２本鎖の収納について説明せよ。(　)',
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '３．',
+          questionImg: [],
+          questionSentence:
+            'pseudostratified ciliated epithelium の構造を説明せよ。またこれがどの臓器のどの部分に存在するか答えよ。(　)',
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '４．',
+          questionImg: [],
+          questionSentence: '外分泌と内分泌の違いを説明せよ。(　)',
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '５．',
+          questionImg: [],
+          questionSentence: '軟骨内骨化について説明せよ。(　)',
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '６．',
+          questionImg: [],
+          questionSentence:
+            '神経筋接合部の構造と伝達方法について説明せよ。(　)',
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '７．',
+          questionImg: [],
+          questionSentence: 'Axon と Dendrite の違いを説明せよ。(　)',
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '８．',
+          questionImg: [],
+          questionSentence: 'オリゴデンドロサイトの構造と機能を説明せよ。(　)',
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '９．',
+          questionImg: [],
+          questionSentence: '骨髄での血球成分を５つ答えよ。(　)',
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+      ],
+    },
+    {
       groupTag: '2018総論',
       groupContents: [
         {
@@ -315,7 +394,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' 組織や細胞において、DNA や mRNA の発現分布や量を検出する方法をいう(　)という.',
           answerImg: [],
-          answer: '',
+          answer: 'in situ hybridization',
           commentary: '',
         },
         {
@@ -324,24 +403,24 @@ export const useQuestionList = () => {
           questionSentence:
             ' パラフィン切片を脱パラフィンする際はまず(　)で処理し、その後アルコール系列で処理し、ついで水洗する.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'キシレン',
+          commentary: 'この過程で脂質は流失する',
         },
         {
           detailInfo: '3.',
           questionImg: [],
           questionSentence: ' 1 nanometer は(　)m である.',
           answerImg: [],
-          answer: '',
+          answer: '10^-9',
           commentary: '',
         },
         {
           detailInfo: '4.',
           questionImg: [],
-          questionSentence: ' ほとんどの細胞は直径１〜(　) m の大きさである.',
+          questionSentence: ' ほとんどの細胞は直径１〜(　)μm の大きさである.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '100',
+          commentary: '二次卵母細胞が直径100μm程度',
         },
         {
           detailInfo: '5.',
@@ -349,8 +428,8 @@ export const useQuestionList = () => {
           questionSentence:
             ' 顕微鏡のレンズにおいて、同じ倍率であれば開口数が大きいほど明るさは(　)く、分解能は(　)い.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '明るく、高い',
+          commentary: '開口数：対物レンズが光を集められる範囲',
         },
         {
           detailInfo: '6.',
@@ -358,8 +437,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' 脂質二重層の膜に埋もれた膜受容体を立体的に観察するのに適した方法を(　)法という.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'フリーズフラクチャー',
+          commentary:
+            '膜受容体を凍結させ形態を保存することにより、溶液状態本来の構造を解析することが可能となる',
         },
         {
           detailInfo: '7.',
@@ -367,7 +447,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' Mitochondria の cristae には酸化的リン酸化や(　)系の酵素が存在する.',
           answerImg: [],
-          answer: '',
+          answer: '電子伝達系',
           commentary: '',
         },
         {
@@ -375,15 +455,16 @@ export const useQuestionList = () => {
           questionImg: [],
           questionSentence: ' Lysosome には(　)酵素が含まれる.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '加水分解',
+          commentary:
+            'リソソームはエンドサイトーシスによって取り込まれた成分を分解する',
         },
         {
           detailInfo: '9.',
           questionImg: [],
           questionSentence: ' Ribosomal RNA は(　)に付着している.',
           answerImg: [],
-          answer: '',
+          answer: '滑面小胞体',
           commentary: '',
         },
         {
@@ -392,8 +473,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' 小胞体で合成されたタンパク質は Golgi apparatus の(　)面から取り込まれ、翻訳語修飾され、trans 面から放出される.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'シス',
+          commentary:
+            'ゴルジ装置のシス面は小胞体側（内側）で、トランス面が外側',
         },
         {
           detailInfo: '11.',
@@ -401,7 +483,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' タンパク質を分解する仕組みとして、ユビキチン・プロテアソーム系と(　)がある.後者の研究は 2016 年のノーベル生理学・医学賞の受賞対象となった.',
           answerImg: [],
-          answer: '',
+          answer: 'オートファジー',
           commentary: '',
         },
         {
@@ -410,8 +492,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' 細胞間コミュニケーションの担い手である exosome は microRNA、たんぱく質、(　)などを内包している.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'DNA',
+          commentary:
+            'exosome:細胞から分泌される直径50-150nmの顆粒状の物質。分泌されたexosomeは体内を循環している。',
         },
         {
           detailInfo: '13.',
@@ -419,8 +502,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' Microtubule には方向性があり、tubulin2 量体が付加しやすい側を(　)端という.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '+',
+          commentary:
+            'たとえば神経細胞ではプラス端が軸索終末側にあり、キネシンKinesinは順行性軸索輸送、ダイニンDyneinは逆行性軸索輸送を担当している。',
         },
         {
           detailInfo: '14.',
@@ -428,7 +512,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' 上皮細胞に含まれる中間径フィラメントを(　)という.',
           answerImg: [],
-          answer: '',
+          answer: 'ケラチン',
           commentary: '',
         },
         {
@@ -437,8 +521,8 @@ export const useQuestionList = () => {
           questionSentence:
             ' 真核生物の細胞内に存在する DNA と protein の複合体を(　)という.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'クロマチン',
+          commentary: 'chromatin。 染色体はchromosome',
         },
         {
           detailInfo: '16.',
@@ -446,8 +530,8 @@ export const useQuestionList = () => {
           questionSentence:
             ' 体細胞の核 1 個に含まれる DNA の塩基対の総数は約 60 億塩基対で、全長約2m であり、DNA は 10 塩基対ごとに double helix 構造をとる.それでは、2 重螺旋 一つの長さは(　)m である.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '3.3nm',
+          commentary: '=3.3*10^-9m',
         },
         {
           detailInfo: '17.',
@@ -455,8 +539,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' 三毛猫は基本的にメスであるが、これは毛色の黒色と茶色が(　)染色体上の対立遺伝子によって決定されることによる.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'X',
+          commentary:
+            'X染色体を2倍もつメスではX染色体の発現がモザイク状に抑制されている。',
         },
         {
           detailInfo: '18.',
@@ -464,7 +549,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' Histone と DNA の結合を弱め、transcription を促進する酵素を(　)という.',
           answerImg: [],
-          answer: '',
+          answer: 'ヒストンアセチル化酵素',
           commentary: '',
         },
         {
@@ -473,8 +558,8 @@ export const useQuestionList = () => {
           questionSentence:
             ' DNA の塩基配列は変化によらない遺伝子発現を制御・伝達するシステムおよびその学術分野を epigenetics というが、主なメカニズはヒストン修飾と(　)である.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'DNAメチル化',
+          commentary: '環境因子',
         },
         {
           detailInfo: '20.',
@@ -482,7 +567,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' 上皮細胞の tight junction の主たる構成たんぱく質は(　)であり、gap junction には(　)が存在する',
           answerImg: [],
-          answer: '',
+          answer: 'クローディン、コネキシン',
           commentary: '',
         },
         {
@@ -491,16 +576,18 @@ export const useQuestionList = () => {
           questionSentence:
             ' 消化管の mucus membrane は(　)、(　)と粘膜筋板からなる.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '粘膜上皮、粘膜固有層',
+          commentary:
+            'mucous membrane:粘膜。すべての体の外部と連絡する通路の裏面をおおう粘膜を分泌する膜',
         },
         {
           detailInfo: '22.',
           questionImg: [],
           questionSentence: ' 呼吸器系の epithelium は(　)epithelium である.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '多列円柱上皮',
+          commentary:
+            '=Pseudostratified columnar epithelium。気管と肺胞では構成する上皮細胞の種類は全く異なるが、多列円柱上皮という点では共通している。',
         },
         {
           detailInfo: '23.',
@@ -508,7 +595,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' Basement membrane には(　)型 collagen が存在する.',
           answerImg: [],
-          answer: '',
+          answer: 'Ⅳ',
           commentary: '',
         },
         {
@@ -517,8 +604,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' 外分泌腺の線条部の基底線条には(　)が豊富に存在する.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'ミトコンドリア',
+          commentary:
+            '線条部導管は円柱上皮で、基底側に線条構造を認める。Na/K-ATPaseによってNaイオンが再吸収される。',
         },
         {
           detailInfo: '25.',
@@ -526,7 +614,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' Extracellular matrix の proteoglycan は core protein に(　)などの sugar chain が結合している.',
           answerImg: [],
-          answer: '',
+          answer: 'グリコサミノグリカン',
           commentary: '',
         },
         {
@@ -535,8 +623,8 @@ export const useQuestionList = () => {
           questionSentence:
             ' 密性結合組織の代表的組織は骨と筋肉とを結合する(　)である.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '腱',
+          commentary: 'tendon',
         },
         {
           detailInfo: '27.',
@@ -544,8 +632,8 @@ export const useQuestionList = () => {
           questionSentence:
             ' 完全な collagen が合成されないために生じる壊血病はビタミン C 不足によるが、これはビタミン C が(　)の合成に必須であるためである.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'ヒドロキシプロリン',
+          commentary: '不足すると血管が脆くなり血液が漏れる',
         },
         {
           detailInfo: '28.',
@@ -553,8 +641,8 @@ export const useQuestionList = () => {
           questionSentence:
             ' リンパ節や脾臓に存在する(　)は主に III 型 collagen からなる.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '細網線維',
+          commentary: '組織構造を支えるはたらき',
         },
         {
           detailInfo: '29.',
@@ -562,32 +650,33 @@ export const useQuestionList = () => {
           questionSentence:
             ' 主として鎖骨付近や胸まわりに分布し、脂肪を燃焼し、熱産生に関与するのは(　)である.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '褐色脂肪細胞',
+          commentary: '=Brown fat cell。豊富なミトコンドリアで褐色に見える。',
         },
         {
           detailInfo: '30.',
           questionImg: [],
           questionSentence: ' Chondroblast は(　)系幹細胞由来である.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '間葉',
+          commentary: '軟骨芽細胞Chondroblastは、軟骨細胞chondrocyteへ分化する',
         },
         {
           detailInfo: '31.',
           questionImg: [],
           questionSentence: ' 人体で最も多い cartilage は(　)cartilage である.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'ガラス',
+          commentary:
+            'Hyaline cartilage。比較的線維成分に乏しい。可動関節の関節表面・呼吸器官の壁・肋骨腹側・骨端板に存在。加齢で変性しやすい。',
         },
         {
           detailInfo: '32.',
           questionImg: [],
           questionSentence: ' 耳介、喉頭蓋などに存在するのは(　)軟骨である',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '弾性',
+          commentary: 'Elastic cartilage。他外耳道・耳管など',
         },
         {
           detailInfo: '33.',
@@ -595,16 +684,18 @@ export const useQuestionList = () => {
           questionSentence:
             ' Intervertebral disk herniation では intervertebral disk の(　)が損傷を受け、髄核の内容物が飛び出し(　)を圧迫する.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '線維輪、神経根',
+          commentary:
+            '椎間板intervertebral diskを構成するのは線維軟骨。運動中の摩擦力による侵食から椎骨を保護する',
         },
         {
           detailInfo: '34.',
           questionImg: [],
           questionSentence: ' 膝の関節半月は(　)からなる.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '線維軟骨',
+          commentary:
+            'Fibrous cartilage。Ⅰ型コラーゲンが豊富で、軟骨膜をもたない。',
         },
         {
           detailInfo: '35.',
@@ -612,16 +703,18 @@ export const useQuestionList = () => {
           questionSentence:
             ' 骨形成に必要な osteoclast は(　)幹細胞由来である.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '造血',
+          commentary:
+            '破骨細胞osteoclastは骨芽細胞や軟骨芽細胞（間葉系幹細胞由来）と異なる由来をもつ',
         },
         {
           detailInfo: '36.',
           questionImg: [],
           questionSentence: ' 骨の発生様式には、膜内骨化と(　)骨化がある.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '軟骨内骨化',
+          commentary:
+            '膜内骨化：頭蓋骨、鎖骨など扁平な骨組織が皮膚の組織内に形成される。軟骨内骨化：軟骨内に血管などが進入し徐々に骨細胞に置き換わっていく',
         },
         {
           detailInfo: '37.',
@@ -629,7 +722,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' 骨の主要構成成分である hydroxyapatite は結晶中の(　)が Ca の存在下で沈殿し、加水分解を受けて結晶化する.',
           answerImg: [],
-          answer: '',
+          answer: 'りん',
           commentary: '',
         },
         {
@@ -638,7 +731,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' 骨の脱灰標本作製には切り出した骨の小片を(　)に数週間浸漬しておく必要がある.',
           answerImg: [],
-          answer: '',
+          answer: '硝酸',
           commentary: '',
         },
         {
@@ -647,7 +740,7 @@ export const useQuestionList = () => {
           questionSentence:
             ' ハヴァース管を中心として lamellae が同心円状に取り巻いて形成される円柱状の骨単位のことを(　)という.',
           answerImg: [],
-          answer: '',
+          answer: 'オステオン（骨単位）',
           commentary: '',
         },
         {
@@ -656,8 +749,8 @@ export const useQuestionList = () => {
           questionSentence:
             ' ハヴァース管とハヴァース管を繋ぐ構造物を(　)という.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'フォルクマン管',
+          commentary: 'いずれも血管が通過する',
         },
         {
           detailInfo: '41.',
@@ -665,8 +758,9 @@ export const useQuestionList = () => {
           questionSentence:
             ' osteoblast に(　)が結合すると(　)が誘導され、破骨細胞への分化が誘導され、骨吸収が促進される.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: 'パラトルモンPTH、RANKL',
+          commentary:
+            'パラトルモンは副甲状腺上皮小体から分泌されるホルモンで、血中Caイオン濃度を上昇させる効果をもつ。骨芽細胞はパラトルモンを受け取ると前駆破骨細胞にRANKL（リガンド）を提示し、破骨細胞への分化を促す。',
         },
         {
           detailInfo: '42.',
@@ -674,16 +768,17 @@ export const useQuestionList = () => {
           questionSentence:
             ' Growth hormone は骨の(　)に作用し、骨を長軸方向に伸ばす.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '骨端線',
+          commentary:
+            '成人は骨端線が閉鎖していて作用しない。成長ホルモン過剰は先端巨大症Acromegalyを引き起こす',
         },
         {
           detailInfo: '43.',
           questionImg: [],
           questionSentence: ' 頭蓋骨の大泉門は生後(　)ごろに閉鎖する.',
           answerImg: [],
-          answer: '',
-          commentary: '',
+          answer: '1歳～1歳半',
+          commentary: '小泉門は半年ほどで閉鎖する。',
         },
         {
           detailInfo: '44.',

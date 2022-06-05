@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 export const useHistory = () => {
   const [history, setHistory] = useState([
@@ -7,22 +7,88 @@ export const useHistory = () => {
       askingQuestion: {},
       remainingQuestionList: [],
       isAnswered: false,
+      questionNum: 0,
     },
   ])
   const showHistory = () => {
     return history
   }
+  const loadHistory = (savedStrHistory, questionList) => {
+    let newHistory = history[history.length - 1]
+
+    const savedArrayHistory = savedStrHistory.split(',')
+    newHistory.questionNum = parseInt(savedArrayHistory[0])
+    newHistory.remainingQuestionList = []
+    savedArrayHistory.splice(1).forEach((savedId, index) => {
+      if (newHistory.askedQuestionList.length > 0) {
+        console.log(newHistory)
+        newHistory.forEach((question) => {
+          if (question.id === savedId) {
+            console.log(
+              '被った問題が既に出題されているため、出題から省きました',
+            )
+            return
+          }
+        })
+      }
+      if (index > 1) {
+        savedArrayHistory.splice(1, index - 1).forEach((comparedId) => {
+          if (savedId === comparedId) {
+            console.log('保存されたIDが重複していました。:' + comparedId)
+            return
+          }
+        })
+      }
+      let addingQuestion = {}
+      addingQuestion.id = savedId
+      console.log('addingQUestion.id:' + addingQuestion.id)
+      let savedGroupId = Math.floor(parseInt(savedId.replace('r', '')) / 1000)
+      let savedContentsId = parseInt(savedId.replace('r', '')) % 1000
+      if (
+        // id > 999999 &&
+        questionList[savedGroupId].groupContents[savedContentsId]
+      ) {
+        questionList[savedGroupId].groupContents[
+          savedContentsId
+        ].id = savedId.toString()
+
+        addingQuestion =
+          questionList[savedGroupId].groupContents[savedContentsId]
+        addingQuestion.groupTag = questionList[savedGroupId].groupTag
+      }
+      if (addingQuestion.choices) {
+        if (addingQuestion.answer === '') {
+          addingQuestion.answer = addingQuestion.choices[0]
+        }
+        // 選択肢をランダムに配置
+        let choiceList = [...addingQuestion.choices]
+        addingQuestion.randomizedChoices = []
+        for (let i = 0; i < addingQuestion.choices.length; i++) {
+          addingQuestion.randomizedChoices.push(
+            choiceList.splice(Math.floor(Math.random() * choiceList.length), 1),
+          )
+        }
+      }
+      if (addingQuestion.questionSentence) {
+        newHistory.remainingQuestionList.push(addingQuestion)
+      } else {
+        console.log(
+          '保存されたIDに対応する問題が見つかりませんでした:' + savedId,
+        )
+      }
+    })
+    setHistory([...history, newHistory])
+  }
   const selectQuestionList = (questionList, settingDetail) => {
     let newHistory = history[history.length - 1]
     newHistory.remainingQuestionList = []
-    console.log('selectQuestionList:Start')
     questionList.forEach((group, groupIndex) => {
       if (settingDetail.questionRange.indexOf(group.groupTag) === -1) {
         return
       }
       group.groupContents.forEach((question, questionIndex) => {
         let newRemainingQuestion = question
-        newRemainingQuestion.id = groupIndex * 10000 + questionIndex
+        newRemainingQuestion.id = (groupIndex * 1000 + questionIndex).toString()
         newRemainingQuestion.groupTag = group.groupTag
 
         if (newRemainingQuestion.askedQuestionList) {
@@ -75,6 +141,12 @@ export const useHistory = () => {
         })
         if (wordFilterFlag === 0) return
         if (newRemainingQuestion.choices) {
+          // answerのない問題に自動的に解を追加
+          if (newRemainingQuestion.answer === '') {
+            newRemainingQuestion.answer = newRemainingQuestion.choices[0]
+            console.log('解のない問題に解を自動追加')
+          }
+          // 選択肢をランダムに配置
           let choiceList = [...question.choices]
           newRemainingQuestion.randomizedChoices = []
           for (let i = 0; i < question.choices.length; i++) {
@@ -96,7 +168,9 @@ export const useHistory = () => {
       let newHistory = history[history.length - 1]
       if (newHistory.askingQuestion) {
         newHistory.askedQuestionList = [
-          ...history[history.length - 1].askedQuestionList,
+          ...history[history.length - 1].askedQuestionList.filter(
+            (question) => question.id,
+          ),
           newHistory.askingQuestion,
         ]
       }
@@ -108,19 +182,32 @@ export const useHistory = () => {
       newHistory.askingQuestion = newHistory.remainingQuestionList[randomNum]
       newHistory.remainingQuestionList.splice(randomNum, 1)
       newHistory.isAnswered = false
+      newHistory.questionNum += 1
       setHistory([...history, newHistory])
     }
-    if (settingDetail.questionOrder === 'ascend') {
+    // if (settingDetail.questionOrder === 'ascend') {
+    else {
       let newHistory = history[history.length - 1]
       if (newHistory.askingQuestion) {
         newHistory.askedQuestionList = [
-          ...history[history.length - 1].askedQuestionList,
+          ...history[history.length - 1].askedQuestionList.filter(
+            (question) => question.id,
+          ),
           newHistory.askingQuestion,
         ]
       }
       newHistory.askingQuestion = {}
       function compareFun(QListA, QListB) {
-        return QListA.id - QListB.id
+        if (QListA.id.indexOf('r') !== -1 && QListB.id.indexOf('r') === -1) {
+          return 1
+        }
+        if (QListB.id.indexOf('r') !== -1 && QListA.id.indexOf('r') === -1) {
+          return -1
+        }
+        return (
+          parseInt(QListA.id.replace('r', '')) -
+          parseInt(QListB.id.replace('r', ''))
+        )
       }
       if (newHistory.remainingQuestionList.length > 0) {
         newHistory.remainingQuestionList.sort(compareFun)
@@ -135,6 +222,11 @@ export const useHistory = () => {
         console.log(newHistory.remainingQuestionList[0])
         newHistory.remainingQuestionList.shift()
         newHistory.isAnswered = false
+        newHistory.questionNum += 1
+        // 表示が多くなりすぎないように調節
+        if (newHistory.askedQuestionList.length > 10) {
+          newHistory.askedQuestionList.shift()
+        }
         setHistory([...history, newHistory])
         console.log('nextQuestion:')
         console.log(history)
@@ -155,38 +247,39 @@ export const useHistory = () => {
   const reviewQuestion = (index) => {
     let newHistory = history[history.length - 1]
     if (
-      newHistory.askedQuestionList[index + 1] &&
-      newHistory.askedQuestionList[index + 1].id < 100000000
+      newHistory.askedQuestionList[index] &&
+      newHistory.askedQuestionList[index].id.indexOf('r') === -1
     ) {
-      newHistory.askedQuestionList[index + 1].id += 100000000
-      newHistory.remainingQuestionList.push(
-        newHistory.askedQuestionList[index + 1],
-      )
-      // 復習ボタンを押すとResultBarがおかしくなるバグがあるため、修正
-      // newHistory.askedQuestionList.splice(index + 1, 1)
-      newHistory.askedQuestionList[index + 1].reviewed = true
+      newHistory.askedQuestionList[index].id =
+        'r' + newHistory.askedQuestionList[index].id
+      newHistory.remainingQuestionList.push(newHistory.askedQuestionList[index])
+      newHistory.askedQuestionList.splice(index, 1)
 
       setHistory([...history, newHistory])
-      console.log(history)
     }
     // 現在作業途中
   }
   const reviewAskingQuestion = (settingDetail) => {
     let newHistory = history[history.length - 1]
-    if (newHistory.askingQuestion && newHistory.askingQuestion.id < 100000000) {
-      newHistory.askingQuestion.id += 100000000
+    if (
+      newHistory.askingQuestion &&
+      newHistory.askingQuestion.id.indexOf('r') === -1
+    ) {
+      newHistory.askingQuestion.id = 'r' + newHistory.askingQuestion.id
       newHistory.isAnswered = false
 
       newHistory.remainingQuestionList.push(newHistory.askingQuestion)
       newHistory.askingQuestion = {}
       setHistory([...history, newHistory])
       nextQuestion(settingDetail)
-      console.log(
-        'reviewAskingQuestion:',
-        history[history.length - 1].askingQuestion.id,
-      )
     }
   }
+  // const addQuestionNum = (num) => {
+  //   if (num === '') {
+  //     num = 1
+  //   }
+  //   let newHistory = history[history.length - 1]
+  // }
   return {
     history,
     showHistory,
@@ -196,5 +289,6 @@ export const useHistory = () => {
     hideAnswer,
     reviewQuestion,
     reviewAskingQuestion,
+    loadHistory,
   }
 }
