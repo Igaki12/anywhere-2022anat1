@@ -1,7 +1,11 @@
 import { useState } from 'react'
 import imageSample1 from './img/question/sample.png'
-import imageSample2 from './img/answer/sampleAnswer.JPG'
-import ans2 from './img/answer/DSC_0188.JPG'
+import exosome from './img/answer/exosome.png'
+import fatCell from './img/answer/fatCell.png'
+import osteoporosis from './img/answer/osteoporosis.png'
+import peripheralBlood from './img/answer/peripheralBlood.png'
+import skeletalMuscle from './img/answer/skeletalMuscle.png'
+import synapse from './img/answer/synapse.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -344,17 +348,20 @@ export const useQuestionList = () => {
           questionImg: [],
           questionSentence:
             ' Exosome について、形態、生体内における存在部位、機能について説明しなさい(18 点)',
-          answerImg: [],
-          answer: '',
-          commentary: '',
+          answerImg: [exosome],
+          answer:
+            '細胞は、脂質二重膜に包まれた様々な大きさの細胞外小胞を分泌しており、その内の直径 30～200nm のものを主にエクソソーム(exosome)と呼ぶ。エクソソームは microRNA、DNA、タンパク質を内包し、生体内では唾液や血液、尿などの体液中に存在する。主な働きとして、細胞間コミュニケーションの担い手として、離れた細胞や組織に情報を伝達したり、細胞内の余剰、不要物を細胞外へ排出し、それらを処理する細胞へと受け渡す排出装置としての機能がある。',
+          commentary:
+            '大きさ（別文献だと50nm~150nm）が重要で、同じ細胞外小胞でも比較的大きなものは細胞死により生じたアポトーシス小体に分類される。',
         },
         {
           detailInfo: '2.',
           questionImg: [],
           questionSentence:
             ' white adipocyte、brown adipocyte の違いについて、形態、生体内での存在部位、機能について説明しなさい(18 点)',
-          answerImg: [],
-          answer: '',
+          answerImg: [fatCell],
+          answer:
+            '白色脂肪細胞(White adipocyte)は、下腹部や臀部、また内臓周辺に存在する脂肪細胞であり、主に 体内の余分なエネルギーを蓄積している。細胞内での脂肪滴の割合が大きいため、その外見は白っぽく 見える。 褐色脂肪細胞(Brown adipocyte)は鎖骨付近や脊椎傍に存在する脂肪細胞であり、脂肪を燃焼し熱 を産出する役割を持つ。細胞内には熱を産出するためのミトコンドリアが多く含まれており、その外見は褐 色に見える。',
           commentary: '',
         },
         {
@@ -362,34 +369,40 @@ export const useQuestionList = () => {
           questionImg: [],
           questionSentence:
             ' osteoporosis についてosteoblast、osteoclast、RANKL、estrogen、cytokine、sclerostin を必ず用いて説明せよ(18 点)',
-          answerImg: [],
-          answer: '',
-          commentary: '',
+          answerImg: [osteoporosis],
+          answer:
+            '骨組織は骨芽細胞(osteoblast)による骨形成と、破骨細胞(osteoclast)による骨吸収とのバランスによっ てその恒常性が保たれているが、このバランスが崩れ、骨吸収が骨形成を上回った時に、骨密度が低下 し、骨折などがしやすくなる骨粗鬆症(osteoporosis)は起こる。 骨芽細胞の表面に RANKL と呼ばれる膜タンパク質が発現し、これと前駆破骨細胞に存在する RANK と いう受容体が結合すると、前駆破骨細胞は破骨細胞へと分化する。この機構を制御する因子としてエス トロゲン(estrogen)とスクレロスチン(sclerostin)が存在する。 エストロゲン(estrogen)は女性ホルモンの一種であり、破骨細胞への分化を促進するサイトカイン (cytokine)である、IL-1,IL-6,TNF-αの増加を抑制する。エストロゲンが高齢化に伴い減少すると破骨細 胞による骨吸収が増加する。 また、スクレロスチン(sclerostin)は、骨量が増加しすぎないように骨芽細胞の分化を抑制するタンパク質 であり、その分泌は骨にかかる衝撃や負荷によって制御されている。運動不足などによって骨にかかる衝 撃や負荷が減少すると、スクレロスチンの分泌が増加し、骨芽細胞が減少することによって骨形成が低下 する。 これらの理由によって骨形成と骨吸収のバランスが低下し、骨密度が低下する骨粗鬆症が引き起こされ る。',
+          commentary:
+            '他パラトルモンPTH（副甲状腺/上皮小体）もRANKLを誘導する機能がある。破骨細胞活性化→骨吸収促進→血漿Caイオン濃度上昇',
         },
         {
           detailInfo: '4.',
           questionImg: [],
           questionSentence:
             'Skeletal muscle の構造について、I band、A band、sarcomere、transversetubule system、sarcoplasmic reticulum という用語を必ず用いて説明せよ(18点)',
-          answerImg: [],
-          answer: '',
-          commentary: '',
+          answerImg: [skeletalMuscle],
+          answer:
+            '骨格筋(Skeletal muscle)とは、人の骨格を動かす筋肉である。 骨格筋は筋繊維が多数集まってできており、その筋繊維は多数の筋原繊維で構成されている。 筋原繊維の中には、アクチンフィラメントとミオシンフィラメントが交互に配列していて、アクチンフィラメントの みから成る部分を I 帯(I band)と言い、ミオシンフィラメントの端から端までの部分を A 帯(A band)と言う。I 帯の中央を Z 線と呼び、Z 線と Z 線の間を筋節(sarcomere)と呼ぶ。 またこの筋原繊維は、筋小胞体(sarcoplasmic reticulum)という網状の膜が連続した構造によって覆わ れており、筋小胞体の端は終末槽と呼ばれ、連続する筋小胞体の終末槽の間には、A 帯と I 帯に沿って 筋原繊維を横切るように横行小管(transverse tubules)が存在する。この終末槽、横行小管、終末槽 の連なりを三つ組と呼ぶ。 ',
+          commentary:
+            '心筋とは横紋・T細管・アクチン/ミオシンフィラメント/筋小胞体が共通しているが、骨格筋は多核でgap junctionが存在しない',
         },
         {
           detailInfo: '5.',
           questionImg: [],
           questionSentence: ' 化学シナプスの構造について説明せよ(１８点)',
-          answerImg: [],
-          answer: '',
-          commentary: '',
+          answerImg: [synapse],
+          answer:
+            'ある神経細胞の軸索の終末と、別の神経細胞との接触部位をシナプスと呼ぶ。 化学シナプスにおいて、軸索の終末をシナプス前部、別の神経細胞への入力部位をシナプス後部、また その間の空間をシナプス間隙と呼ぶ。 活動電位が軸索を伝導してシナプス前部へと達すると、シナプス前部に存在する電位依存性 Ca2+チャ ネルが開口し、細胞外から Ca2+イオンが流入する。これによってシナプス前部に存在するシナプス顆粒が エクソサイトーシスによってシナプス間隙へと流出し、この結果シナプス顆粒に含まれる神経伝達物質(グル タミン酸や GABA,ノルアドレナリンなど)がシナプス間隙へと放出される。これらの神経伝達物質はシナプス 後部に存在する神経伝達物質受容体に結合し、直接膜電位を上昇させるか、細胞内 2 次メッセンジャ ーを活性化することによって、シナプス後部への情報の伝達を行う。',
+          commentary:
+            '受容体がイオンチャネル型だと直接膜電位が上昇し、代謝調節型だと細胞内2次メッセンジャーを活性化させることになる。',
         },
         {
           detailInfo: '6.',
           questionImg: [],
           questionSentence:
             ' peripheral blood の内 white blood cell/leukocyte を５つ答えよ(10 点)',
-          answerImg: [],
-          answer: '',
+          answerImg: [peripheralBlood],
+          answer: '好酸球、好塩基球、好中球、リンパ球、単球',
           commentary: '',
         },
       ],

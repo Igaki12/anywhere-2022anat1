@@ -1,16 +1,20 @@
 {
   "files": {
     "main.css": "/anywhere-2022anat1/static/css/main.2255ca1a.css",
-    "main.js": "/anywhere-2022anat1/static/js/main.a6a677c7.js",
-    "static/media/sampleAnswer.JPG": "/anywhere-2022anat1/static/media/sampleAnswer.32d9dfc8ac6cc0bae263.JPG",
-    "static/media/DSC_0188.JPG": "/anywhere-2022anat1/static/media/DSC_0188.55c85077c79bcdd6a2b6.JPG",
+    "main.js": "/anywhere-2022anat1/static/js/main.ee61ee9c.js",
+    "static/media/skeletalMuscle.png": "/anywhere-2022anat1/static/media/skeletalMuscle.eb2174b3a2adc4bfa3bc.png",
+    "static/media/fatCell.png": "/anywhere-2022anat1/static/media/fatCell.c0f208b51167a8e6a49b.png",
+    "static/media/exosome.png": "/anywhere-2022anat1/static/media/exosome.aac52d23e0bcea616a77.png",
+    "static/media/synapse.png": "/anywhere-2022anat1/static/media/synapse.4e05c7e6c54a07699421.png",
+    "static/media/osteoporosis.png": "/anywhere-2022anat1/static/media/osteoporosis.4a2925eb40d96acf49ee.png",
+    "static/media/peripheralBlood.png": "/anywhere-2022anat1/static/media/peripheralBlood.88dafe75a403efb72951.png",
     "static/media/sample.png": "/anywhere-2022anat1/static/media/sample.a6320935e2373dc71003.png",
     "index.html": "/anywhere-2022anat1/index.html",
     "main.2255ca1a.css.map": "/anywhere-2022anat1/static/css/main.2255ca1a.css.map",
-    "main.a6a677c7.js.map": "/anywhere-2022anat1/static/js/main.a6a677c7.js.map"
+    "main.ee61ee9c.js.map": "/anywhere-2022anat1/static/js/main.ee61ee9c.js.map"
   },
   "entrypoints": [
     "static/css/main.2255ca1a.css",
-    "static/js/main.a6a677c7.js"
+    "static/js/main.ee61ee9c.js"
   ]
 }
