@@ -1,28 +1,32 @@
 {
   "files": {
     "main.css": "/anywhere-2022anat1/static/css/main.2255ca1a.css",
-    "main.js": "/anywhere-2022anat1/static/js/main.88d4410c.js",
+    "main.js": "/anywhere-2022anat1/static/js/main.8cb18cef.js",
     "static/media/endochondroalOssification.png": "/anywhere-2022anat1/static/media/endochondroalOssification.90fa100a7ed9b5564355.png",
     "static/media/skeletalMuscle.png": "/anywhere-2022anat1/static/media/skeletalMuscle.eb2174b3a2adc4bfa3bc.png",
     "static/media/NeuroMuscularJunction.png": "/anywhere-2022anat1/static/media/NeuroMuscularJunction.ac5822a45ec003291818.png",
+    "static/media/lysosome.png": "/anywhere-2022anat1/static/media/lysosome.fd3414f2496e42eed495.png",
     "static/media/fatCell.png": "/anywhere-2022anat1/static/media/fatCell.c0f208b51167a8e6a49b.png",
+    "static/media/endocrineExocrine.png": "/anywhere-2022anat1/static/media/endocrineExocrine.e537d4e4969deb876a94.png",
     "static/media/gland.png": "/anywhere-2022anat1/static/media/gland.9dd74af3b20c9a37429c.png",
     "static/media/exosome.png": "/anywhere-2022anat1/static/media/exosome.aac52d23e0bcea616a77.png",
     "static/media/synapse.png": "/anywhere-2022anat1/static/media/synapse.4e05c7e6c54a07699421.png",
     "static/media/osteoporosis.png": "/anywhere-2022anat1/static/media/osteoporosis.4a2925eb40d96acf49ee.png",
     "static/media/peripheralBlood.png": "/anywhere-2022anat1/static/media/peripheralBlood.88dafe75a403efb72951.png",
     "static/media/marrowBlood.png": "/anywhere-2022anat1/static/media/marrowBlood.3bc056c552abc37b96f3.png",
+    "static/media/kneeJerkReflex.png": "/anywhere-2022anat1/static/media/kneeJerkReflex.206e6e783617c865a090.png",
     "static/media/oligodendroglia.png": "/anywhere-2022anat1/static/media/oligodendroglia.4c92b73088e072e6274f.png",
     "static/media/doubleHelix.png": "/anywhere-2022anat1/static/media/doubleHelix.f6a5f58de33fed060715.png",
     "static/media/neuron.png": "/anywhere-2022anat1/static/media/neuron.729e5c1a0ff85c417f21.png",
+    "static/media/gray12.png": "/anywhere-2022anat1/static/media/gray12.c1880dd385a418424773.png",
     "static/media/autophagy.png": "/anywhere-2022anat1/static/media/autophagy.b0144d89cda2881ee419.png",
     "static/media/psudostratifiedEpithelium.png": "/anywhere-2022anat1/static/media/psudostratifiedEpithelium.1992d87a47e99c542652.png",
     "index.html": "/anywhere-2022anat1/index.html",
     "main.2255ca1a.css.map": "/anywhere-2022anat1/static/css/main.2255ca1a.css.map",
-    "main.88d4410c.js.map": "/anywhere-2022anat1/static/js/main.88d4410c.js.map"
+    "main.8cb18cef.js.map": "/anywhere-2022anat1/static/js/main.8cb18cef.js.map"
   },
   "entrypoints": [
     "static/css/main.2255ca1a.css",
-    "static/js/main.88d4410c.js"
+    "static/js/main.8cb18cef.js"
   ]
 }

@@ -14,6 +14,10 @@ import NeuroMuscularJunction from './img/answer/NeuroMuscularJunction.png'
 import oligodendroglia from './img/answer/oligodendroglia.png'
 import psudostratifiedEpithelium from './img/answer/psudostratifiedEpithelium.png'
 import neuron from './img/answer/neuron.png'
+import endocrineExocrine from './img/answer/endocrineExocrine.png'
+import gray12 from './img/answer/gray12.png'
+import kneeJerkReflex from './img/answer/kneeJerkReflex.png'
+import lysosome from './img/answer/lysosome.png'
 
 export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
@@ -267,6 +271,85 @@ export const useQuestionList = () => {
         //   answer: '',
         //   commentary: '',
         // },
+      ],
+    },
+    {
+      groupTag: '2016総論',
+      groupContents: [
+        {
+          detailInfo: '1',
+          questionImg: [],
+          questionSentence: 'Lysosome について説明しなさい。(9 点) ',
+          // choices: ['', '', '', ''],
+          answerImg: [lysosome],
+          answer:
+            ' リソソームは真核生物が持つ細胞小器官の一つである。生体膜に包まれた構造をしており、細胞内消化の場で あり、主な機能としては、生体高分子（タンパク質）の分解と再利用である。エンドサイトーシスやオートフ ァジーによって、膜内に取り込まれた生体高分子はリソソームで加水分解される。そのため、リソソーム内に は多数の加水分解酵素が含まれており、それらが適正に機能するために内腔は酸性（pH5.0）に保たれている。 分解された物質の内、有用なものは細胞質に吸収され、不要なものはエキソサイトーシスのよって細胞外に廃 棄されるか、残余小体として細胞内に留まる。 単細胞生物では、リソソームが消化器として働いている。',
+          commentary: 'Lysosome リソソーム',
+        },
+        {
+          detailInfo: '2',
+          questionImg: [],
+          questionSentence:
+            'DNA の double strand はどのように折り畳まれて核内にするのか、histone という語句を必ず用いて説明せよ。(9 点) ',
+          answerImg: [doubleHelix],
+          answer:
+            'H2A、H2B、H3、H4 という 4 種類のコアヒストンがそれぞれ 2 分子ずつからなるヒストン八量体に DNA2 本鎖が約 2 回巻き付いている。これをヌクレオソームという。ヌクレソーム間の DNA2 本鎖の部分には H1 か らなるリンカーヒストンが結合している。このようにしてヌクレオソームがつながったものをクロマチンとい う。1 本のクロマチンが核内でスーパーコイル構造を形成して、1 つの染色体を形成することによって、DNA2 本鎖は核内に整然と折りたたまれて存在している。',
+          commentary:
+            'double strand 2 本鎖、histone ヒストン。nucleosome →chromatin →chromosome',
+        },
+        {
+          detailInfo: '3',
+          questionImg: [],
+          questionSentence:
+            'exocrine gland の構造上の一般的特性を述べよ。(18 点) ',
+          answerImg: [endocrineExocrine],
+          answer:
+            '外分泌腺は上皮由来であり、上皮の細胞が分化し、導管を作り、上皮表面とのつながりを保っている。分泌物 の合成能を持つ細胞が存在し、導管を通って、上皮自由表面へ分泌する。外分泌されるものには、汗、皮質、 乳、消化液などが存在する。また、細胞からの分泌の仕方には、腺細胞自体が崩壊し、細胞内の様々な物質が 分泌物質として放出される全分泌（ホロクリン）、細胞の一部が出芽してちぎれ放出される離出分泌（アポクリ ン）などがある。 大唾液腺では、粘液細胞や漿液細胞、漿液半月からなる腺房部から介在部導管、腺房部導管を通り分泌される。',
+          commentary:
+            'exocrine gland 外分泌腺 /endocrine gland内分泌腺。両者ともに上皮細胞が分化したもので、最も大きな違いは導管を持つか持たないか',
+        },
+        {
+          detailInfo: '4',
+          questionImg: [],
+          questionSentence:
+            '成長期の子供の epiphyseal area における endochondral ossification について述べよ(18 点)',
+          answerImg: [endochondroalOssification],
+          answer:
+            '胎生～思春期における硝子軟骨が骨組織に置換されることを軟骨内骨化という。成長期の子供の骨端部では、 軟骨細胞が増殖、肥大化することによって、骨が伸びる。肥大化した細胞は死んでいき、軟骨基質は石灰化し ていく。細胞死中の軟骨細胞は破骨細胞に取り込まれて処理される。軟骨細胞がなくなった部分には、石灰化 した軟骨基質を足場にして骨芽細胞が骨基質を産生し、最終的に自らの分泌した骨基質に埋まり骨細胞に分化 を遂げ、骨が形成される。また、石灰化した軟骨基質は血管から流入した大食細胞によって除去される。',
+          commentary:
+            'epiphyseal area 骨端部 endochondral ossification 軟骨内骨化。頭蓋骨などは膜内骨化',
+        },
+        {
+          detailInfo: '5',
+          questionImg: [],
+          questionSentence:
+            'knee-jerk reflex について、muscle spindle と neuromuscular junction という用語を用いて説明しなさい。(18 点) ',
+          answerImg: [kneeJerkReflex],
+          answer:
+            '筋紡錘は筋細胞間にある感覚受容器で、被膜に包まれて筋線維と平行に存在している。 数本の錐内筋線維と呼ばれる細長くて非常に小さい特殊な筋線維から構成されており、求心性神経終末の一次 感覚終末と二次感覚終末がこれを取り巻いている。筋が伸長されると筋紡錘の錐内筋線維も伸張され、一次感 覚終末が求心性インパルスを発射し、後根神経節を通り、脊髄の背中側にある感覚神経、介在ニューロン、腹 側にある運動神経からなる反射弓を通りα運動ニューロンによって錐外筋線維へ紡錘内の緊張度に応じてただ ちに適当な筋緊張の命令が伝達される。 膝蓋腱反射は、大腿四頭筋の腱の叩打により、その筋線維が急に伸長されるため、感覚終末が脊髄へインパル スを発射することによって起きる。脊髄はただちに大腿四頭筋収縮の命令を運動神経へ発する。運動神経終末 と筋線維の接着部には神経筋接合部と呼ばれる部分があり、シナプスが形成されていて、筋収縮を引き起こす 神経伝達が行われる。神経終末からアセチルコリンが放出され、筋線維に存在する受容体に受け取られる。こ れにより、筋肉細胞に脱分極が引き起こされ、活動電位が発生し、筋収縮が引き起こされる。その結果、膝関 節の伸展運動をきたす。',
+          commentary:
+            'knee-jerk reflex 膝蓋腱反射 muscle spindle 筋紡錘 neuromuscular junction 神経筋接合部。膝蓋腱叩打→筋紡錘からの信号→神経筋接合部へ信号が伝わり筋収縮',
+        },
+        {
+          detailInfo: '6',
+          questionImg: [],
+          questionSentence:
+            'GrayⅠ型と GrayⅡ型の synapse について説明せよ。(18 点)           ',
+          answerImg: [gray12],
+          answer:
+            '興奮の伝達は促進系と抑制系の 2 種類が存在している。これは神経終末に存在している細胞内顆粒の種類によ り決定される。 1 つ目は GrayⅠ型シナプスであり、非対称型シナプスともいう。球形のシナプス小胞を持つ。著明なアクティ ブゾーンをもち、シナプス後膜肥厚が顕著で、シナプス間隙が広い。興奮性シナプスといわれている。 2 つ目は GrayⅡ型シナプスで対称性シナプスともいう。扁平のシナプス小胞をもつ。アクティブゾーン、シナ プス後膜肥厚ともに顕著ではなく、シナプス間隙が狭い。抑制性シナプスといわれている。',
+          commentary:
+            'アクティブゾーン・シナプス後膜肥厚・シナプス間隙・神経伝達物質の違いが原因',
+        },
+        {
+          detailInfo: '7',
+          questionImg: [],
+          questionSentence:
+            '成人の leucocyte について 5 つあげなさい。(10 点) ',
+          answerImg: [],
+          answer: '好中球、好酸球、好塩基球、リンパ球、単球',
+          commentary: 'leucocyte 白血球',
+        },
       ],
     },
     {
