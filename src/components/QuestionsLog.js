@@ -346,7 +346,7 @@ export const QuestionsLog = ({
           variant={'outline'}
           onClick={() => {
             nextQuestion(settingDetail)
-            scrollToTheBottom()
+            // scrollToTheBottom()
             setIsOpen(false)
           }}
         >

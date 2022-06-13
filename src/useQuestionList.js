@@ -258,9 +258,9 @@ export const useQuestionList = () => {
             'What happens when erythrocytes are placed in a hypotonic solution?',
           // choices: ['', '', '', ''],
           answerImg: [],
-          answer: '（赤血球が）縮む',
+          answer: '（赤血球が）膨らむ',
           commentary:
-            '赤血球の膜は半透膜（水のみ通す）で、浸透圧の影響を受けやすい。',
+            '赤血球の膜は半透膜（水のみ通す）で、浸透圧の影響を受けやすい。hypotonic:低張圧　hypertonic:高張圧',
         },
         // {
         //   detailInfo: '5/23',
